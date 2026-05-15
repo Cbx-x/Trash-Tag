@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Paryavaran Kavalu</string>
+    
+    <!-- Branding -->
+    <string name="brand_paryavaran">PARYAVARAN</string>
+    <string name="brand_kavalu">KAVALU</string>
+    <string name="tagline_p1">Together for a</string>
+    <string name="tagline_p2">Cleaner Tomorrow</string>
+    <string name="eco_guardian">Eco-Guardian App</string>
+
+    <!-- Auth -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_continue">Please login to continue</string>
+    <string name="email_label">Email</string>
+    <string name="email_placeholder">Enter your email</string>
+    <string name="password_label">Password</string>
+    <string name="password_placeholder">Enter your password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_button">LOGIN</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="register_link">Register</string>
+    <string name="or_divider">OR</string>
+    <string name="login_as">Login As</string>
+    <string name="role_reporter">Reporter</string>
+    <string name="role_cleaner">Cleaner</string>
+
+    <string name="create_account">Create Account</string>
+    <string name="register_subtitle">Join us and make our city cleaner</string>
+    <string name="select_role">Select Role</string>
+    <string name="full_name_label">Full Name</string>
+    <string name="full_name_placeholder">Enter your full name</string>
+    <string name="phone_label">Phone Number</string>
+    <string name="phone_placeholder">Enter your phone number</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="already_have_account">Already have an account? </string>
+    <string name="login_link">Login</string>
+
+    <!-- Home & Dashboard -->
+    <string name="hello_reporter">Hello, Reporter!</string>
+    <string name="hello_cleaner">Hello, Cleaner!</string>
+    <string name="home_subtitle">Let\'s make our city cleaner today.</string>
+    <string name="cleaner_home_subtitle">Here are today\'s updates</string>
+    <string name="recent_reports">Recent Reports</string>
+    <string name="assigned_reports">Assigned Reports</string>
+    <string name="view_all">View All</string>
+    <string name="report_waste_card">Report Waste</string>
+    <string name="report_waste_subtitle">Report waste in your area</string>
+    <string name="my_rewards_card">My Rewards</string>
+    <string name="my_rewards_subtitle">View points you earned</string>
+
+    <!-- Report Page & Thanking Page -->
+    <string name="report_waste">Report Waste</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="tap_to_add">Tap to add photo</string>
+    <string name="location_label">Location</string>
+    <string name="use_current_location">Use Current Location</string>
+    <string name="waste_type">Waste Type</string>
+    <string name="description_opt">Description (Optional)</string>
+    <string name="description_placeholder">Enter description about the issue…</string>
+    <string name="submit_report">SUBMIT REPORT</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="report_submitted">Your report has been submitted successfully.</string>
+    <string name="city_greener">Together, we make our city cleaner and greener.</string>
+    <string name="home_btn">HOME</string>
+
+    <!-- Rewards Page -->
+    <string name="total_points">Total Points</string>
+    <string name="reward_encouragement">Keep reporting and earn more!</string>
+    <string name="points_summary">Points Summary</string>
+    <string name="recent_rewards">Recent Rewards</string>
+    <string name="reports_submitted">Reports Submitted</string>
+    <string name="pending_reports">Pending Reports</string>
+    <string name="resolved_reports">Resolved Reports</string>
+
+    <!-- Profile Page -->
+    <string name="profile_title">Profile</string>
+    <string name="reports_done">Reports Done</string>
+    <string name="points_label">Points</string>
+    <string name="days_active">Days Active</string>
+    <string name="my_work_history">My Work History</string>
+    <string name="my_points">My Points</string>
+    <string name="my_reports">My Reports</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_p">Change Password</string>
+    <string name="h_support">Help &amp; Support</string>
+    <string name="logout">Logout</string>
+
+    <!-- Map & Notifications -->
+    <string name="waste_reports_map">Waste Reports Map</string>
+    <string name="cleaner_map_title">Cleaner Map</string>
+    <string name="notif_title">Notifications</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+</resources>

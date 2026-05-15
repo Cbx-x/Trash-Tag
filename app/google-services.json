@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "668166889371",
+    "project_id": "wastetag-fd979",
+    "storage_bucket": "wastetag-fd979.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668166889371:android:a535c4284e982d64e94b3e",
+        "android_client_info": {
+          "package_name": "com.mindmatrix.app1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrFhrWvDLomq9NPmMW2dfC6Yn2gztkjjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
