@@ -8,6 +8,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ExitToApp
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -42,6 +43,8 @@ fun CleanerHomeScreen(
     val inProgressCount = reports.count { it.status == "In Progress" }
     val resolvedCount = reports.count { it.status == "Resolved" }
 
+    var showMenu by remember { mutableStateOf(false) }
+
     BackHandler {}
 
     Scaffold(
@@ -62,6 +65,29 @@ fun CleanerHomeScreen(
                 actions = {
                     IconButton(onClick = onNotificationsClick) {
                         Icon(Icons.Default.Notifications, contentDescription = "Notifications")
+                    }
+                    Box {
+                        IconButton(onClick = { showMenu = true }) {
+                            Icon(Icons.Default.MoreVert, contentDescription = "More options")
+                        }
+                        DropdownMenu(
+                            expanded = showMenu,
+                            onDismissRequest = { showMenu = false }
+                        ) {
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.logout)) },
+                                onClick = {
+                                    showMenu = false
+                                    onLogout()
+                                },
+                                leadingIcon = { 
+                                    Icon(
+                                        imageVector = Icons.AutoMirrored.Filled.ExitToApp, 
+                                        contentDescription = null 
+                                    ) 
+                                }
+                            )
+                        }
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(

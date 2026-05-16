@@ -172,3 +172,49 @@ fun ReporterHomeScreen(
         }
     }
 }
+
+@Composable
+fun ReporterBottomNavigation(
+    onHomeClick: () -> Unit = {},
+    onMapClick: () -> Unit = {},
+    onRewardsClick: () -> Unit = {},
+    onProfileClick: () -> Unit = {}
+) {
+    NavigationBar(
+        containerColor = Color.White,
+        tonalElevation = 8.dp
+    ) {
+        NavigationBarItem(
+            icon = { Icon(Icons.Default.Home, contentDescription = "Home") },
+            label = { Text(stringResource(R.string.home_btn)) },
+            selected = true,
+            onClick = onHomeClick,
+            colors = NavigationBarItemDefaults.colors(
+                selectedIconColor = IndiaGreen,
+                selectedTextColor = IndiaGreen,
+                indicatorColor = Color(0xFFE8F5E9)
+            )
+        )
+        NavigationBarItem(
+            icon = { Icon(Icons.Default.Map, contentDescription = "Map") },
+            label = { Text("Map") },
+            selected = false,
+            onClick = onMapClick,
+            colors = NavigationBarItemDefaults.colors(unselectedIconColor = Color.Gray)
+        )
+        NavigationBarItem(
+            icon = { Icon(Icons.Default.EmojiEvents, contentDescription = "Rewards") },
+            label = { Text("Rewards") },
+            selected = false,
+            onClick = onRewardsClick,
+            colors = NavigationBarItemDefaults.colors(unselectedIconColor = Color.Gray)
+        )
+        NavigationBarItem(
+            icon = { Icon(Icons.Default.Person, contentDescription = "Profile") },
+            label = { Text(stringResource(R.string.profile_title)) },
+            selected = false,
+            onClick = onProfileClick,
+            colors = NavigationBarItemDefaults.colors(unselectedIconColor = Color.Gray)
+        )
+    }
+}

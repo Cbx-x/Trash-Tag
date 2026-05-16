@@ -1,0 +1,15 @@
+// Workaround for Java 25 compatibility issue
+// Tell Kotlin to use Java 11 target despite running on Java 25
+gradle.projectsLoaded {
+    rootProject {
+        allprojects {
+            afterEvaluate {
+                // Configure Kotlin compiler to treat Java 25 as Java 11
+                tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
+                    kotlinOptions.jvmTarget = '11'
+                }
+            }
+        }
+    }
+}
+

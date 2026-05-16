@@ -198,6 +198,40 @@ fun RegisterScreen(
 }
 
 @Composable
+fun RoleButton(
+    text: String,
+    icon: androidx.compose.ui.graphics.vector.ImageVector,
+    isSelected: Boolean,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    OutlinedButton(
+        onClick = onClick,
+        modifier = modifier.height(52.dp),
+        shape = RoundedCornerShape(8.dp),
+        colors = ButtonDefaults.outlinedButtonColors(
+            containerColor = if (isSelected) IndiaGreen.copy(alpha = 0.1f) else Color.Transparent,
+            contentColor = if (isSelected) IndiaGreen else Color.Gray
+        ),
+        border = androidx.compose.foundation.BorderStroke(
+            width = 1.dp,
+            color = if (isSelected) IndiaGreen else Color.LightGray
+        )
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Icon(
+                imageVector = icon,
+                contentDescription = null,
+                modifier = Modifier.size(20.dp),
+                tint = if (isSelected) IndiaGreen else Color.Gray
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text(text, fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal)
+        }
+    }
+}
+
+@Composable
 fun RegisterField(
     label: String, value: String, onValueChange: (String) -> Unit, placeholder: String,
     icon: androidx.compose.ui.graphics.vector.ImageVector, keyboardType: KeyboardType = KeyboardType.Text,

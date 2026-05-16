@@ -57,8 +57,8 @@ fun ReportWasteScreen(
     val fusedLocationClient = remember { LocationServices.getFusedLocationProviderClient(context) }
     
     var locationName by remember { mutableStateOf("") }
-    var latitude by remember { mutableStateOf(0.0) }
-    var longitude by remember { mutableStateOf(0.0) }
+    var latitude by remember { mutableDoubleStateOf(0.0) }
+    var longitude by remember { mutableDoubleStateOf(0.0) }
     
     var wasteType by remember { mutableStateOf("Garbage on Road") }
     var description by remember { mutableStateOf("") }
@@ -82,6 +82,7 @@ fun ReportWasteScreen(
                 
                 try {
                     val geocoder = Geocoder(context, Locale.getDefault())
+                    @Suppress("DEPRECATION")
                     val addresses = geocoder.getFromLocation(loc.latitude, loc.longitude, 1)
                     locationName = addresses?.firstOrNull()?.getAddressLine(0) ?: "${loc.latitude}, ${loc.longitude}"
                 } catch (e: Exception) {
@@ -152,7 +153,7 @@ fun ReportWasteScreen(
                     .clip(RoundedCornerShape(12.dp))
                     .background(Color(0xFFF8F9FA))
                     .border(1.dp, Color.LightGray, RoundedCornerShape(12.dp))
-                    .clickable { cameraLauncher.launch() },
+                    .clickable { cameraLauncher.launch(null) },
                 contentAlignment = Alignment.Center
             ) {
                 if (capturedImage != null) {
@@ -173,7 +174,7 @@ fun ReportWasteScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            Text(stringResource(R.string.location), style = MaterialTheme.typography.labelLarge, color = Color.Black)
+            Text(stringResource(R.string.location_label), style = MaterialTheme.typography.labelLarge, color = Color.Black)
             Spacer(modifier = Modifier.height(8.dp))
             OutlinedTextField(
                 value = locationName,
@@ -206,7 +207,7 @@ fun ReportWasteScreen(
                     value = wasteType,
                     onValueChange = {},
                     readOnly = true,
-                    modifier = Modifier.fillMaxWidth().menuAnchor(),
+                    modifier = Modifier.fillMaxWidth().menuAnchor(MenuAnchorType.PrimaryNotEditable),
                     trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(isExpanded) },
                     shape = RoundedCornerShape(8.dp),
                     colors = OutlinedTextFieldDefaults.colors(
@@ -236,7 +237,7 @@ fun ReportWasteScreen(
                 value = description,
                 onValueChange = { description = it },
                 modifier = Modifier.fillMaxWidth().height(100.dp),
-                placeholder = { Text(stringResource(R.string.description_hint), color = Color.Gray) },
+                placeholder = { Text(stringResource(R.string.description_placeholder), color = Color.Gray) },
                 shape = RoundedCornerShape(8.dp),
                 colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = IndiaGreen,

@@ -9,6 +9,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.Assignment
+import androidx.compose.material.icons.automirrored.filled.HelpCenter
 import androidx.compose.material.icons.automirrored.filled.Logout
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
@@ -110,12 +112,12 @@ fun ProfileScreen(
                     color = themeColor
                 )
                 ProfileStat(
-                    label = if (isReporter) "Resolved" else stringResource(R.string.points), 
+                    label = if (isReporter) stringResource(R.string.resolved_reports) else stringResource(R.string.points_label),
                     value = if (isReporter) "15" else "120", 
                     color = themeColor
                 )
                 ProfileStat(
-                    label = if (isReporter) stringResource(R.string.points) else stringResource(R.string.days_active), 
+                    label = if (isReporter) stringResource(R.string.points_label) else stringResource(R.string.days_active),
                     value = if (isReporter) "250" else "15", 
                     color = themeColor
                 )
@@ -126,7 +128,7 @@ fun ProfileScreen(
             // Role-specific Action List
             Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp)) {
                 ProfileActionItem(
-                    icon = if (isReporter) Icons.Default.Assignment else Icons.Default.History, 
+                    icon = if (isReporter) Icons.AutoMirrored.Filled.Assignment else Icons.Default.History, 
                     label = if (isReporter) stringResource(R.string.my_reports) else stringResource(R.string.my_work_history), 
                     onClick = {}
                 )
@@ -140,7 +142,7 @@ fun ProfileScreen(
                 
                 ProfileActionItem(icon = Icons.Default.Edit, label = stringResource(R.string.edit_profile), onClick = {})
                 ProfileActionItem(icon = Icons.Default.Lock, label = stringResource(R.string.change_p), onClick = {})
-                ProfileActionItem(icon = Icons.Default.HelpCenter, label = stringResource(R.string.h_support), onClick = {})
+                ProfileActionItem(icon = Icons.AutoMirrored.Filled.HelpCenter, label = stringResource(R.string.h_support), onClick = {})
                 
                 Spacer(modifier = Modifier.height(16.dp))
                 

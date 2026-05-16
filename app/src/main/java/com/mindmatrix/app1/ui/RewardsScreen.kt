@@ -3,12 +3,12 @@ package com.mindmatrix.app1.ui
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Assignment
+import androidx.compose.material.icons.automirrored.filled.Assignment
 import androidx.compose.material.icons.filled.CheckCircle
+import androidx.compose.material.icons.filled.EmojiEvents
 import androidx.compose.material.icons.filled.HourglassEmpty
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -106,7 +106,7 @@ fun RewardsScreen(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    SummaryItem(count = "25", label = "Reports Submitted", color = Color(0xFF1976D2), icon = Icons.Default.Assignment, modifier = Modifier.weight(1f))
+                    SummaryItem(count = "25", label = "Reports Submitted", color = Color(0xFF1976D2), icon = Icons.AutoMirrored.Filled.Assignment, modifier = Modifier.weight(1f))
                     SummaryItem(count = "5", label = "Pending Reports", color = Color(0xFFFBC02D), icon = Icons.Default.HourglassEmpty, modifier = Modifier.weight(1f))
                     SummaryItem(count = "15", label = "Resolved Reports", color = IndiaGreen, icon = Icons.Default.CheckCircle, modifier = Modifier.weight(1f))
                 }
@@ -117,7 +117,7 @@ fun RewardsScreen(
                 Text("Recent Rewards", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, color = Color.Black)
             }
 
-            items(6) { index ->
+            items(6) { _ ->
                 RewardListItem(
                     title = "Report Submitted",
                     date = "18 May 2023",
