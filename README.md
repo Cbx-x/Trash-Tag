@@ -30,41 +30,12 @@
 
 ## 📸 Screenshots
 
-### 1.Splash Screen ### 2.Login Page ### 3.Registration Page ### 4.Reporter Home Page
-<img width="150" height="300" alt="Splash Screen" src="https://github.com/user-attachments/assets/62e0b153-db90-454d-b26b-dd1c22144ea8" /> <img width="150" height="300" alt="Login screen" src="https://github.com/user-attachments/assets/c10801e1-7962-4014-9bbb-44d81aeb308b" /> <img width="150" height="300" alt="Registration Screen" src="https://github.com/user-attachments/assets/42095e3f-82fb-4f6b-a4ec-a384b7d8fe6a" /> <img width="150" height="300" alt="Reporter Home page" src="https://github.com/user-attachments/assets/b0692e94-668f-4c5d-bc5a-ba52593b684a" />
+### 1.Splash Screen - 2.Login Page - 3.Registration Page  - 4.Reporter Home Page - 5.Waste Reporting Page - 6.Reporter Reward Page 
+<img width="150" height="300" alt="Splash Screen" src="https://github.com/user-attachments/assets/62e0b153-db90-454d-b26b-dd1c22144ea8" /> - <img width="150" height="300" alt="Login screen" src="https://github.com/user-attachments/assets/c10801e1-7962-4014-9bbb-44d81aeb308b" /> - <img width="150" height="300" alt="Registration Screen" src="https://github.com/user-attachments/assets/42095e3f-82fb-4f6b-a4ec-a384b7d8fe6a" /> - <img width="150" height="300" alt="Reporter Home page" src="https://github.com/user-attachments/assets/b0692e94-668f-4c5d-bc5a-ba52593b684a" /> - <img width="150" height="300" alt="Waste Reporting Page" src="https://github.com/user-attachments/assets/a97b26c3-bd85-4140-9cd4-f2304204bce8" /> - <img width="150" height="300" alt="Reporter Reward Page" src="https://github.com/user-attachments/assets/3d7d2eae-32a6-4145-b0f1-e12f63dbaf53" />
 
 
-
-
-
-
-
- 
-
-
-### 5.Waste Reporting Page 
-<img width="150" height="300" alt="Waste Reporting Page" src="https://github.com/user-attachments/assets/a97b26c3-bd85-4140-9cd4-f2304204bce8" />
-
-### 6.Reporter Reward Page 
-<img width="150" height="300" alt="Reporter Reward Page" src="https://github.com/user-attachments/assets/3d7d2eae-32a6-4145-b0f1-e12f63dbaf53" />
-
-### 7.Reporter Maps 
-<img width="150" height="300" alt="Reporter Maps Page" src="https://github.com/user-attachments/assets/97e83220-e392-45b4-83e2-fe7004f3a58b" />
-
-### 8.Reporter Profile 
-<img width="150" height="300" alt="Reporter Profile " src="https://github.com/user-attachments/assets/6a4adbb0-be88-4cbc-a5ff-a8587416b22f" />
-
-### 9.Cleaner Home Page 
-<img width="150" height="300" alt="Cleaner Home page" src="https://github.com/user-attachments/assets/2ac1b96b-059a-48ac-a76f-c2f702eb3734" />
-
-### 10.Cleaner Maps 
-<img width="150" height="300" alt="Cleaner Maps page" src="https://github.com/user-attachments/assets/bc97b9d5-43ed-4d58-89e0-87f1b74ba084" />
-
-### 11.Cleaner Notification Page 
-<img width="150" height="300" alt="Notification page" src="https://github.com/user-attachments/assets/d66610a3-7097-4daa-9b65-0af030b4d66a" />
-
-### 12.Cleaner Profile 
-<img width="150" height="300" alt="Cleaner Profile page" src="https://github.com/user-attachments/assets/2fd568f3-4b10-4f9d-9d9b-60fb2722a279" />
+### 7.Reporter Maps - 8.Reporter Profile - 9.Cleaner Home Page - 10.Cleaner Maps - 11.Cleaner Notification Page - 12.Cleaner Profile 
+<img width="150" height="300" alt="Reporter Maps Page" src="https://github.com/user-attachments/assets/97e83220-e392-45b4-83e2-fe7004f3a58b" /> - <img width="150" height="300" alt="Reporter Profile " src="https://github.com/user-attachments/assets/6a4adbb0-be88-4cbc-a5ff-a8587416b22f" /> - <img width="150" height="300" alt="Cleaner Home page" src="https://github.com/user-attachments/assets/2ac1b96b-059a-48ac-a76f-c2f702eb3734" /> - <img width="150" height="300" alt="Cleaner Maps page" src="https://github.com/user-attachments/assets/bc97b9d5-43ed-4d58-89e0-87f1b74ba084" /> - <img width="150" height="300" alt="Notification page" src="https://github.com/user-attachments/assets/d66610a3-7097-4daa-9b65-0af030b4d66a" /> - <img width="150" height="300" alt="Cleaner Profile page" src="https://github.com/user-attachments/assets/2fd568f3-4b10-4f9d-9d9b-60fb2722a279" />
 
 
 ## 🚀 Getting Started
